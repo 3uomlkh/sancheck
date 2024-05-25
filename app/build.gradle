@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.sancheck.myApp"
         minSdk 26
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -59,4 +59,9 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    // splash screen
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
+//    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.6.1"
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
 }
